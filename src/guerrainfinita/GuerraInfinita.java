@@ -17,6 +17,7 @@ public class GuerraInfinita {
   
     public static void main(String[] args) {
 
+        
        
    joiaEspaco gemaEspaco = new joiaEspaco("Gema Espaço","Azul",5,"peder o dedo");
    JoiaMente gemaMente = new JoiaMente("Gema Mente","Azul",5,"peder o dedo");
@@ -25,9 +26,15 @@ public class GuerraInfinita {
    JoiaTempo gemaTempo = new JoiaTempo("Gema Espaço","Azul",5,"peder o dedo");
    JoiaPoder gemaPoder= new JoiaPoder("Gema Espaço","Azul",5,"peder o dedo");
   
-   PersonagemThanos thanos = new PersonagemThanos("Thanos", 10,10);
-    PersonagemVoce voce = new PersonagemVoce("Player1",7, 7);
- 
+   PersonagemThanos thanos = new PersonagemThanos("Thanos", 10,10,"Manopla_Thanos");
+   
+   PersonagemVoce voce = new PersonagemVoce("Player1",7, 7,"Manopla_Player1");
+
+    String[] arg ={"Triangulo","Cubo"};
+
+   Play jogar = new Play("Para se obter a gema do Espaço decubra o poder do...",arg);
+        System.out.println(jogar.getPergResp());
+   
     }
     
 }

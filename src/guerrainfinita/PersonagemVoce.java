@@ -10,9 +10,10 @@ package guerrainfinita;
  * @author jango
  */
 public class PersonagemVoce extends Personagem{
-
-    public PersonagemVoce(String nm_personagem, Integer qtdade_poder, Integer vida) {
+    private String ferramenta;
+    public PersonagemVoce(String nm_personagem, Integer qtdade_poder, Integer vida,String ferr) {
         super(nm_personagem, qtdade_poder, vida);
+        this.ferramenta=ferr;
     }
     
     

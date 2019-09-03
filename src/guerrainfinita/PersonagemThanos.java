@@ -10,9 +10,10 @@ package guerrainfinita;
  * @author jango
  */
 public class PersonagemThanos extends Personagem{
-
-    public PersonagemThanos(String nm_personagem, Integer qtdade_poder, Integer vida) {
+    private String ferramenta;
+    public PersonagemThanos(String nm_personagem, Integer qtdade_poder, Integer vida,String ferr) {
         super(nm_personagem, qtdade_poder, vida);
+        this.ferramenta=ferr;
     }
 
     
